@@ -1,0 +1,34 @@
+.header-wrapper {
+
+  grid-row: header-s/header-e;
+  grid-column: content-s/content-e;
+
+  display: grid;
+  grid-template-columns: [s] 1fr [e];
+
+  grid-template-rows: [title-s] 30px [title-e sub-s] 20px [sub-e];
+
+  padding-top: 4rem;
+  &-title {
+    grid-row: title-s/title-e;
+    grid-column: s/e;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3rem;
+  }
+
+  &-subtitle {
+    grid-row: sub-s/sub-e;
+    grid-column: s/e;
+    color: $color-red-BA;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+.bar {
+  grid-column: page-s/page-e;
+  grid-row: bar-s/bar-e;
+  background-color: $color-gray-D8;
+}
