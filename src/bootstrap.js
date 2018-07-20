@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
+import reduxThunk from 'redux-thunk'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './components/app';
 import reducers from './reducers';
@@ -10,7 +11,7 @@ import Signup from './components/auth/Signup'
 import HeaderWrapper from './components/HeaderWrapper'
 import HeaderBar from './components/headerBar'
 
-const createStoreWithMiddleware = applyMiddleware()(compose((window.devToolsExtension ? window.devToolsExtension() : f=>f)(createStore)));
+const createStoreWithMiddleware = applyMiddleware(reduxThunk)(compose((window.devToolsExtension ? window.devToolsExtension() : f=>f)(createStore)));
 
 // import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';

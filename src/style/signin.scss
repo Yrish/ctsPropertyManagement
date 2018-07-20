@@ -26,5 +26,10 @@
     &-text-links {
       margin-top: 5.2rem;
     }
+
+    &-email,
+    &-password {
+      transform: translateX(-64.5);
+    }
   }
 }
