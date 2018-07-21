@@ -1,0 +1,29 @@
+.tab-nav {
+  grid-column: page-s/page-e;
+  grid-row: bar-s/bar-e;
+  display: grid;
+  grid-template-rows: [tab-s] 50px [tab-e content-s] 1fr [content-e];
+
+  .tabs {
+    grid-row: tab-s/tab-e;
+    border-bottom: 2px solid $color-gray-E6;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+
+    > * {
+      margin: 0px 15px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transform: translateY(2px);
+      font-size:  1.6rem;
+      font-weight: 500;
+
+      &.active {
+        color: $color-red-BA;
+        border-color: $color-red-BA;
+      }
+    }
+  }
+}
