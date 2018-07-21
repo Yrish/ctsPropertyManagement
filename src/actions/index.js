@@ -1,8 +1,10 @@
 import {
-  signup
+  signup,
+  signin
 } from './auth'
 
 
 export {
-  signup
+  signup,
+  signin
 }
