@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Archive from './Archive'
+import Newsletter from './Newsletter'
 
 export default class NewsLetterContainer extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class NewsLetterContainer extends Component {
       <div className="newsletter-container">
         <div>add button</div>
         <Archive title="Archive"/>
-        <div>content</div>
+        <Newsletter />
       </div>
     )
   }
