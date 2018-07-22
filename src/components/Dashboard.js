@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NewsLetterContainer from './newsletter/NewsLetterContainer'
 
 import TabNav from './TabNav'
 
@@ -10,9 +11,9 @@ export default class Dashboard extends Component {
     this.state = {
       tabs: [
         {
-          title: "Newsleter",
+          title: "Newsletter",
           active: true,
-          component: <h2>An amazing newsletter</h2>
+          component: <NewsLetterContainer />
         },
         {
           title: "Requests",

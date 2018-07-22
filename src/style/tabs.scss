@@ -2,6 +2,7 @@
   grid-column: page-s/page-e;
   grid-row: bar-s/bar-e;
   display: grid;
+  height: 100%;
   grid-template-rows: [tab-s] 50px [tab-e content-s] 1fr [content-e];
 
   .tabs {
